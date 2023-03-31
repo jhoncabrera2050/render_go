@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'render.apps.RenderConfig',
     'psycopg2',
+    'render',
 ]
 
 MIDDLEWARE = [
@@ -83,8 +83,8 @@ WSGI_APPLICATION = 'ecommerce_rest.wsgi.application'
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
-'''
+}'''
+
 
 import dj_database_url
 DATABASES = {

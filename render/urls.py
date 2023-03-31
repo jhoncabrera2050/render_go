@@ -5,5 +5,5 @@ from django.conf.urls.static import static
 from  . import views
 
 urlpatterns = [
-    path('categoria/<int:categoria_id>/',views.categoria,name="categoria"),
+    path('', views.index, name='Render'),
 ]
